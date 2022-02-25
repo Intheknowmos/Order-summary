@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript</title>
+</head>
+<body>
+	<div>
+		Javascript
+	</div>
+	<script>
+		// var score; 
+		// score = 22;
+
+		// var username = "Moses"; 
+		// console.log(username)
+
+		// var a = "book"
+
+		// var x = a[0]
+		// var y = a[1] + a[2]
+		// var z = a[a.length - 1]
+
+		// console.log(x + y + z)
+
+		// arr.push to push value to the end
+		// let lastItem = arr.pop() to remove last item
+
+		// shift and unshift for adding items to the beginning
+
+		// function sum(a, b){
+		// 	console.log(a + b)
+		// }
+
+		// sum(3,4)
+
+		// function rf(){
+		// 	console.log("Hi World")
+		// }
+
+		// rf(); 
+
+
+		// function addFive(num) {
+		// 	console.log(num + 5)
+		// 	return num + 5 
+		// }
+
+		// addFive(5);
+		// addFive(4);
+		// addFive(3);
+		// addFive(2);
+		// addFive(1);
+
+		// let Global = "This is Global"
+
+		// function findGlobal() {
+
+		// 	console.log(Global)
+		// }
+
+		// findGlobal();
+
+		// let arr = [1,2,3,4,5];
+
+		// function nextinLine(arr,num) {
+		// 	arr.shift();
+		// 	arr.push(num);
+		// 	return num 
+		// }
+
+		// console.log("before" + JSON.stringify(arr))
+		// console.log(nextinLine(arr,6))
+		// console.log("after" + JSON.stringify(arr))
+
+
+		let name = "Moses"
+		let password = "bitcoin"
+
+		if (name == "Moses") {
+			console.log("This is correct")
+		}
+
+		if (name != "Moses") {
+			console.log("This is wrong") 
+		}
+
+		function andOperator(num) {
+			if(num < 10 && num > 5) {
+				return "correct"
+			}
+				return "incorrect"
+		}
+		console.log(andOperator(4));
+
+
+		function caseInSwitch(val) {
+			let answer = "";
+			if (val === 1) {
+				answer = "alpha"
+			} else if (val === 2) {
+				answer = "beta"
+			} else if (val === 3) {
+				answer = "gamma"
+			} else {
+				answer = "delta"
+			}
+			return answer;
+		}
+
+		console.log(caseInSwitch(1))
+
+		function caseInIfElse(val) {
+			let answer = "";
+
+			switch (val) {
+				case 1: 
+					answer = "alpha";
+					break;
+				case 2:
+					answer = "beta";
+					break;
+				case 3:
+					answer = "gamma";
+					break;
+				case 4:
+					answer = "delta"
+				default:
+					answer = "not valid"
+			}
+			return answer;
+		}
+
+		console.log(caseInIfElse(2))
+
+
+		function cc(cards) {
+			let count = "0";
+
+			switch (cards) {
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+					count++;
+					break;
+				case 6:
+				case 7:
+				case 8:
+					count = count;
+					break;
+				case 10:
+				case 'J':
+				case 'Q':
+				case 'K':
+				case 'A':
+					count--;
+					break;
+			}
+			if (count > 0) {
+				return count + " Bet"
+			} else if (count <= 0 ) {
+				return `${count} Hold`
+			}
+
+		}		
+		console.log(cc('A'))
+
+
+		// const user = {
+		// 	user1: {
+		// 		username: "Moses",
+		// 		hobbies: [traveling, sports, selling]
+		// 	},
+		// 	user2: {
+		// 		username: "Baddie",
+		// 		hobbies: 
+		// 	},
+		// }
+		// console.log(user.user1)
+
+		// function updateRecords (records, id, prop, value) {
+		// 	if (prop !== "tracks" && value !== "") {
+		// 		records[id][prop] = value
+		// 	} else if (prop === "tracks" && records[id].hasOwnProperty("tracks") === false) {
+		// 		records[id][prop] = [value];
+		// 	} else if (prop === ) 
+		// }
+
+
+		const ourArray = [];
+		let i = 0;
+
+		while (i < 5) {
+			ourArray.push(i);    // while loop
+			i++;
+		}
+		console.log(ourArray) 
+
+		// const myArray = []
+
+		// for (let i = 0; i < 5; i++) {
+		// 	myArray.push(i)
+		// }
+
+		const myArray = [];
+
+		for (let i = 1; i < 10; i++) {
+			myArray.push(i)        // for loop
+		}
+
+		console.log(myArray) 
+
+
+		function multiply(arr, n) {
+    		let product = 1;
+    		for (let i = 0; i < n; i++) {
+      	product *= arr[i];
+    	}
+    	return product;
+ 		}
+
+ 		console.log(multiply([2,4,5],3))
+
+
+ 		console.log(Math.random())
+
+ 		console.log(Math.floor(Math.random() * 10))
+
+
+
+
+
+
+	</script>
+</body>
+</html>

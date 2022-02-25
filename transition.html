@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div> Baddest Boy </div>
+	<div class="ball"></div>
+	<style> 
+		div {
+			height: 100px;
+			width: 100px;
+			background-color: cadetblue;
+			position: absolute;
+			top: 20%;
+			left: 10%;
+			transform: rotate(45deg);
+			transform: scale(1.2);
+			transition: all 2s ease-in;
+		}
+		div:hover {
+			background-color: red;
+			width: 500px;
+			height: 500px;
+		}
+
+		.ball {
+			width: 70px;
+			height: 70px;
+			background-color: black;
+			border-radius: 30%;
+			position: relative;
+			left: 300px;
+			top: 300px;
+			animation: bounce 5s ease-in infinite;
+		}
+
+		@keyframes bounce {
+			0%{
+				top: 100px;
+			}
+
+			25% {
+				top: 250px;
+			}
+
+			50% {
+				top: 320px;
+			}
+
+			100% {
+				top: 400px;
+			}
+		}
+	</style>
+</body>
+</html>

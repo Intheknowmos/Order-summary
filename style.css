@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+	--Pale-blue: hsl(225, 100%, 94%);
+	--Bright-blue: hsl(245, 75%, 52%);
+	--Vpblue: hsl(225, 100%, 98%);
+	--Desatblue: hsl(224, 23%, 55%);
+	--Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+	width: 100%;
+	background-image: url(images/patback.svg);
+	background-repeat: no-repeat;
+	background-color: var(--Pale-blue);
+}
+
+main {
+	width: 400px;
+	height: 600px;
+	margin: 0 auto;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 15px;
+	text-align: center;
+}
+
+h2 {
+	font-weight: 900;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.pricecontainer {
+	display: flex;
+	width: 70%;
+	margin: 20px auto 0 auto;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--Vpblue);
+}
+
+.icondiv {
+	display: flex;
+	column-gap: 10px;
+}
+
+.pricediv {
+	text-align: left;
+}
+
+.change {
+	text-decoration: underline;
+}
+
+.button {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.button button {
+	width: 70%;
+	margin: 0 auto;
+	padding: 12px 0;
+	border-radius: 10px;
+	border: none;
+}
+
+.button button:nth-child(1) {
+	background-color: var(--Bright-blue);
+	color: white;
+	box-shadow: 0px 5px 10px 2px grey;
+}
+
+.button button:nth-child(1):hover {
+	background-color: darkblue;
+}
+
+.button button:nth-child(2) {
+	background-color: unset;
+	color: var(--Darkblue);
+}
+
+.button button:nth-child(2):hover {
+	background-color: grey;
+}
+
+
+.attribution {
+ font-size: 11px; 
+ text-align: center; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
